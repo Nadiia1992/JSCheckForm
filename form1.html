@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="uk" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Інформація про користувача</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+
+<body onload="loadForm()">
+
+    <div class="container">
+        <h1>Інформація про користувача</h1>
+        <form name="form1">
+            <div class="form-group">
+                <label for="firstname">Ім'я:</label>
+                <input type="text" name="firstname" id="firstname" /><br />
+                <span id="firstnameError" class="error"></span>
+                <label for="lastname">Прізвище:</label>
+                <input type="text" name="lastname" id="lastname" /><br />
+                <span id="lastnameError" class="error"></span>
+                <label for="birthdayYear">Рік народження:</label>
+                <input type="text" name="birthdayYear" id="birthdayYear" /><br />
+                <span id="birthdayYearError" class="error"></span>
+                <label for="gender">Стать:</label>
+                <select name="gender" id="gender">
+                    <option value="male">Чоловіча</option>
+                    <option value="female">Жіноча</option>
+                </select><br />
+                <span id="genderError" class="error"></span>
+                <label for="phone">Номер телефону:</label>
+                <input type="text" name="phone" id="phone" /><br />
+                <span id="phoneError" class="error"></span>
+                <label for="skype">Skype:</label>
+                <input type="text" name="skype" id="skype" /><br />
+                <span id="skypeError" class="error"></span>
+                <div id ="buttons">
+                <input type="button" value="Зберегти" onclick="btnClick()" />
+                <input type="button" value="Вийти" onclick="delData()" />
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <p>&copy; 2026 Інформація про користувача</p>
+    </div>
+</body>
+
+</html>
